@@ -37,7 +37,9 @@
         "core-features/wallet-abstraction",
         "core-features/gas-abstraction",
         "core-features/liquidity-abstraction",
-        "core-features/ai-workflows"
+        "core-features/ai-workflows",
+        "core-features/intent-bridges",
+        "core-features/defi-agents"
       ]
     },
     {
@@ -53,7 +55,8 @@
       "pages": [
         "integration-guides/consumer-apps",
         "integration-guides/enterprise",
-        "integration-guides/customization"
+        "integration-guides/customization",
+        "integration-guides/zksync"
       ]
     },
     {
