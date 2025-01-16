@@ -1,91 +1,68 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Trikon Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
+    "primary": "#1890FF",
+    "light": "#1890FF",
+    "dark": "#1890FF"
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@trikon.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.trikon.io"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "overview",
+        "quickstart"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Core Features",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "core-features/identity-abstraction",
+        "core-features/wallet-abstraction",
+        "core-features/gas-abstraction",
+        "core-features/liquidity-abstraction",
+        "core-features/ai-workflows"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Developer Tools",
       "pages": [
-        "api-reference/introduction"
+        "developer-tools/sdks",
+        "developer-tools/dashboard",
+        "developer-tools/api-reference"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Integration Guides",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "integration-guides/consumer-apps",
+        "integration-guides/enterprise",
+        "integration-guides/customization"
+      ]
+    },
+    {
+      "group": "Tutorials",
+      "pages": [
+        "tutorials/gasless-transactions",
+        "tutorials/identity-onboarding",
+        "tutorials/cross-chain-dapps"
       ]
     }
-  ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  }
+  ]
 }
