@@ -66,6 +66,25 @@
         "tutorials/identity-onboarding",
         "tutorials/cross-chain-dapps"
       ]
+    },
+    {
+      "group": "RA-1 Framework",
+      "pages": [
+        "ra1/introduction",
+        "ra1/architecture",
+        {
+          "group": "Core Components",
+          "pages": [
+            "ra1/components/chain-abstraction",
+            "ra1/components/defai-toolkit",
+            "ra1/components/defi-toolkit",
+            "ra1/components/identity-solutions",
+            "ra1/components/sdk-api"
+          ]
+        },
+        "ra1/implementation-guide",
+        "ra1/quickstart"
+      ]
     }
   ]
 }
