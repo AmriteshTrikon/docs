@@ -2,60 +2,90 @@
 title: 'RA-1 Architecture'
 description: 'Technical Architecture of the Root Abstraction Framework'
 ---
+# RA-1 Technical Architecture
+<img
+  className="block dark:hidden"
+  src="/images/03.png"
+  alt="RA-1 Technical Architecture"
+  width="100%"
+  height="auto"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/03.png"
+  alt="RA-1 Technical Architecture"
+  width="100%"
+  height="auto"
+/>
 
-# RA-1 Architecture
 
-## Framework Overview
+
+{/* ## System Architecture
 
 <Frame>
   <img src="/images/ra1-architecture.png" alt="RA-1 Architecture Diagram" />
-</Frame>
+</Frame> */}
 
-## Core Components
+## Core Technical Components
 
 <CardGroup cols={2}>
   <Card 
-    title="Chain Abstraction Stack" 
+    title="Chain Abstraction Layer (CAL)" 
     icon="layer-group"
     href="/ra1/components/chain-abstraction"
   >
-    Foundation layer handling cross-chain operations
+    Multi-chain message passing protocol with Byzantine fault tolerance and atomic commitment guarantees
   </Card>
   <Card 
-    title="DeFAI Toolkit" 
+    title="DeFAI Runtime Environment" 
     icon="robot"
     href="/ra1/components/defai-toolkit"
   >
-    AI-powered tools for smart automation
+    Zero-knowledge neural inference engine with MEV-resistant execution optimization
   </Card>
   <Card 
-    title="DeFi Toolkit" 
+    title="DeFi Protocol Interface" 
     icon="money-bill-transfer"
     href="/ra1/components/defi-toolkit"
   >
-    Comprehensive DeFi integration tools
+    Composable protocol adapters with automated liquidity routing and cross-chain settlement
   </Card>
   <Card 
-    title="Identity Solutions" 
+    title="Identity Protocol Stack" 
     icon="fingerprint"
     href="/ra1/components/identity-solutions"
   >
-    Unified identity and authentication system
+    EIP-4337 compliant account abstraction with ZK-based identity verification
   </Card>
   <Card 
-    title="SDK & API Suite" 
+    title="Developer Infrastructure" 
     icon="code"
     href="/ra1/components/sdk-api"
   >
-    Developer tools and integration components
+    Type-safe SDK with RPC middleware and WebAssembly runtime
   </Card>
 </CardGroup>
 
-## System Integration
+## Technical Integration Interfaces
 
-The RA-1 framework is designed for seamless integration with existing systems through:
+The RA-1 framework exposes multiple integration endpoints:
 
-- RESTful APIs
-- WebSocket connections
-- GraphQL endpoints
-- Smart contract interfaces 
+- **REST API**
+  - OpenAPI 3.0 compliant endpoints
+  - JWT-based authentication
+  - Rate-limited with exponential backoff
+
+- **WebSocket Protocol**
+  - Bi-directional real-time state updates
+  - Binary message format using Protocol Buffers
+  - Automatic reconnection with state recovery
+
+- **GraphQL API**
+  - Federated schema architecture
+  - Real-time subscriptions
+  - Automatic query optimization
+
+- **Smart Contract Interfaces**
+  - ERC-165 compliant interface detection
+  - Upgradeable proxy pattern implementation
+  - Gas-optimized contract interactions 
