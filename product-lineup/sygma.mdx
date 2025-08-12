@@ -1,0 +1,48 @@
+---
+title: 'Sygma — Intent Recognition Engine'
+description: 'Understands user goals and routes them across protocols and chains'
+---
+
+## Overview
+
+Sygma interprets user intents (goals) and compiles them into executable plans across chains and protocols. It aligns desired outcomes with the best route while honoring policy, risk, and cost constraints.
+
+## Key Capabilities
+
+- Intent parsing and validation
+- Policy and compliance checks
+- Multi‑chain strategy selection and routing
+- Works with Axon (messaging), TIPAY (gas), and Vault (wallet) for execution
+
+## Architecture
+
+1. Capture: user intent entered via SDK/UI
+2. Plan: resolve intent → strategy candidates → scoring
+3. Route: pick optimal route across chains and protocols
+4. Execute: hand off to Axon/TIPAY/Vault for settlement
+
+## SDK Quickstart
+
+```typescript
+import { Trikon } from '@trikon/sdk';
+
+const trikon = new Trikon({ apiKey: process.env.TRIKON_API_KEY });
+
+// Example: Best‑rate cross‑chain swap intent
+await trikon.intents.submit({
+  goal: 'swap',
+  from: { chain: 'polygon', asset: 'USDC', amount: '100' },
+  to:   { chain: 'ethereum', asset: 'ETH' },
+  preferences: { slippageBps: 50, maxFeesUsd: 5 }
+});
+```
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Axon (Messaging)" icon="arrows-rotate" href="/product-lineup/axon" />
+  <Card title="TIPAY (Paymaster)" icon="gas-pump" href="/product-lineup/tipay" />
+  <Card title="Vault (Wallet)" icon="wallet" href="/product-lineup/vault" />
+  <Card title="SDX (SDK)" icon="code" href="/product-lineup/sdx" />
+</CardGroup>
+

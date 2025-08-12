@@ -1,0 +1,35 @@
+---
+title: 'SDX — Smart Dev Experience SDK'
+description: 'Build chain‑agnostic apps with one unified developer kit'
+---
+
+## Overview
+
+SDX provides a unified SDK and APIs for integrating identity, intents, messaging, and paymaster features with minimal boilerplate.
+
+## Key Capabilities
+
+- Single SDK for multi‑chain workflows
+- Strong typing and helpers for Trikon primitives
+- Local dev tools and simulators
+
+## Install
+
+```bash
+npm install @trikon/sdk @trikon/types
+```
+
+## Initialize
+
+```typescript
+import { Trikon } from '@trikon/sdk';
+const trikon = new Trikon({ apiKey: process.env.TRIKON_API_KEY });
+```
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart" />
+  <Card title="Services Layer" icon="layer-group" href="/core-features/services-layer" />
+</CardGroup>
+

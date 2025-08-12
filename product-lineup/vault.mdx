@@ -1,0 +1,40 @@
+---
+title: 'Vault — Programmable Smart Wallet'
+description: 'Native, secure, gasless, and cross‑chain user experience'
+---
+
+## Overview
+
+Vault is a chain‑agnostic smart account that abstracts keys, gas, and cross‑chain complexity. It powers seamless transactions with account abstraction and policy controls.
+
+## Key Capabilities
+
+- Account Abstraction (AA) with session keys and policies
+- Gasless UX via TIPAY
+- Cross‑chain actions coordinated through Axon
+- Recovery and programmable authorization
+
+## SDK Quickstart
+
+```typescript
+import { Trikon } from '@trikon/sdk';
+
+const trikon = new Trikon({ apiKey: process.env.TRIKON_API_KEY });
+const wallet = await trikon.vault.create({ owner: '<EVM_ADDRESS>' });
+
+// Send without native gas on destination chain
+await wallet.send({
+  chain: 'zksync',
+  to: '<DEST_ADDRESS>',
+  asset: 'USDC',
+  amount: '25'
+});
+```
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="TIPAY (Paymaster)" icon="gas-pump" href="/product-lineup/tipay" />
+  <Card title="Axon (Messaging)" icon="arrows-rotate" href="/product-lineup/axon" />
+</CardGroup>
+

@@ -1,0 +1,37 @@
+---
+title: 'Axon — Cross‑Chain Messaging Gateway'
+description: 'Secure communication and state passing across chains'
+---
+
+## Overview
+
+Axon provides verifiable messaging and orchestration across chains. It enables intent plans to be executed atomically and securely across heterogeneous environments.
+
+## Key Capabilities
+
+- Verifiable cross‑chain messaging
+- Ordered execution and replay protection
+- Hooks for PAY/AA via TIPAY and Vault
+- Pluggable security and path selection
+
+## SDK Quickstart
+
+```typescript
+import { Trikon } from '@trikon/sdk';
+
+const trikon = new Trikon({ apiKey: process.env.TRIKON_API_KEY });
+
+await trikon.axon.send({
+  from: { chain: 'polygon' },
+  to:   { chain: 'base' },
+  payload: { type: 'TRANSFER', asset: 'USDC', amount: '100' }
+});
+```
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Sygma (Intents)" icon="lightbulb" href="/product-lineup/sygma" />
+  <Card title="TIPAY (Paymaster)" icon="gas-pump" href="/product-lineup/tipay" />
+</CardGroup>
+

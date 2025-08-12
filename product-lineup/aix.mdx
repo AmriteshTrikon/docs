@@ -1,0 +1,36 @@
+---
+title: 'AIX — Agent Intelligence Exchange'
+description: 'Deploy AI agents to manage yield, routing, or compliance'
+---
+
+## Overview
+
+AIX is a framework and marketplace for deploying agents that observe intents, propose strategies, and execute with guardrails.
+
+## Key Capabilities
+
+- Policy‑bound autonomous execution
+- Strategy plugins for DeFi, routing, and risk
+- Auditability and simulation before execution
+
+## SDK Quickstart
+
+```typescript
+import { Trikon } from '@trikon/sdk';
+
+const trikon = new Trikon({ apiKey: process.env.TRIKON_API_KEY });
+
+await trikon.aix.deploy({
+  name: 'YieldOptimizer',
+  permissions: ['swap', 'stake'],
+  budgetUsdPerDay: 50
+});
+```
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Sygma (Intents)" icon="lightbulb" href="/product-lineup/sygma" />
+  <Card title="DeFi Agents" icon="code-branch" href="/core-features/defi-agents" />
+</CardGroup>
+

@@ -27,31 +27,29 @@
       "pages": [
         "introduction",
         "overview",
+        "product-lineup",
         "quickstart"
       ]
     },
+    
     {
-      "group": "RA-1 Framework",
+      "group": "Product Lineup",
       "pages": [
-        "ra1/introduction",
-        "ra1/architecture",
-        {
-          "group": "Core Components",
-          "pages": [
-            "ra1/components/chain-abstraction",
-            "ra1/components/defai-toolkit",
-            "ra1/components/defi-toolkit",
-            "ra1/components/identity-solutions",
-            "ra1/components/sdk-api"
-          ]
-        },
-        "ra1/implementation-guide",
-        "ra1/quickstart"
+        "product-lineup",
+        "product-lineup/sygma",
+        "product-lineup/vault",
+        "product-lineup/axon",
+        "product-lineup/tipay",
+        "product-lineup/sdx",
+        "product-lineup/aix",
+        "product-lineup/arena",
+        "product-lineup/orbit"
       ]
     },
     {
       "group": "Core Features",
       "pages": [
+        "core-features/services-layer",
         "core-features/identity-abstraction",
         "core-features/wallet-abstraction",
         "core-features/gas-abstraction",

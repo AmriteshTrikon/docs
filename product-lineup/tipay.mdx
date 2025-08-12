@@ -1,0 +1,37 @@
+---
+title: 'TIPAY — Trikon Interchain Paymaster'
+description: 'Seamless, native gas/payment layer abstracted from UX'
+---
+
+## Overview
+
+TIPAY handles fees and payments across chains so users enjoy gasless, predictable experiences. It integrates with Vault and Axon for settlement.
+
+## Key Capabilities
+
+- Sponsor or abstract gas across chains
+- Token‑based fee payments and conversion
+- Policy‑based spend controls and quotas
+- Integrates with account abstraction flows
+
+## SDK Quickstart
+
+```typescript
+import { Trikon } from '@trikon/sdk';
+
+const trikon = new Trikon({ apiKey: process.env.TRIKON_API_KEY });
+
+await trikon.tipay.sponsor({
+  chain: 'arbitrum',
+  tx: '<SIGNED_TX_BYTES>',
+  policy: { maxFeesUsd: 1.5 }
+});
+```
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Vault (Wallet)" icon="wallet" href="/product-lineup/vault" />
+  <Card title="Axon (Messaging)" icon="arrows-rotate" href="/product-lineup/axon" />
+</CardGroup>
+
